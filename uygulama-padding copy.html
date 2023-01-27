@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>uygulama 5-2</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      a:hover {
+        color: green;
+        background-color: crimson;
+      }
+      .main-nav__item--login a:hover {
+        color: #2e4c6d;
+        background-color: #fff;
+        border: 2px solid #2e4c6d;
+      }
+
+      * {
+        padding: 0;
+        margin: 0;
+        border: 0;
+      }
+      .main-nav__item::before {
+        font-size: 36px;
+      }
+      .nav-ul {
+        display: inline-block;
+        width: calc(100% - 150px);
+        text-align: right;
+        text-decoration: none;
+        list-style: none;
+      }
+      .header {
+        background-color: coral;
+        margin: 0px;
+        padding: 0;
+        border: 0;
+      }
+      .main-nav__item {
+        font-family: "Lato", sans-serif;
+        display: inline-block;
+      }
+
+      #baslik {
+        background-color: #2e4c6d;
+      }
+      #footer {
+        background-color: coral;
+      }
+      .body {
+        margin: 0;
+        padding: 0;
+        border: 0;
+      }
+      body {
+        font-family: "Roboto", sans-serif;
+      }
+      #baslik {
+        background: url(home-bg.jpeg);
+        background-position: center;
+      }
+      #baslik__1 {
+        padding: 40px 30px;
+      }
+      .main-nav__item--login a {
+        color: #fff;
+        background-color: #2e4c6d;
+        padding: 4px 16px;
+        border-radius: 8px;
+        border: 2px solid #fff;
+      }
+      .div-ul__item {
+        display: inline-block;
+      }
+      .row {
+        margin: 40px;
+      }
+
+      /* width vermelisin yoksa sırayı kaplayanlar inline block olamaz */
+      .col-3 {
+        display: inline-block;
+        width: 30%;
+        margin: 10px;
+        padding: 8px;
+      }
+      #how-it-works h2 {
+        color: blue;
+        font-size: 30px;
+        font-weight: 600;
+        padding: 10px;
+      }
+      .icon-box h3 {
+        color: darkmagenta;
+        font-size: 26px;
+      }
+      .icon-box i {
+        color: crimson;
+      }
+      .col-2 {
+        display: inline-block;
+        width: calc(50% - 2px);
+        height: 350px;
+        background-color: brown;
+        vertical-align: top;
+      }
+      .features__left {
+        background: url(features.jpeg);
+        background-size: cover;
+        background-position: top center;
+      }
+      .features__right {
+        padding: 40px;
+        background-color: #edf5f7;
+      }
+      .features__right h3 {
+        font-size: 30px;
+      }
+      #features a {
+        background-color: #fc997c;
+        color: #fff;
+        margin-top: 20px;
+        padding: 7px 15px;
+        height: 40px;
+        display: inline-block;
+        text-decoration: none;
+        font-size: 14px;
+        text-align: center;
+        border: 1px solid #fc997c;
+        border-radius: 5px;
+      }
+      #features a:hover {
+        border: 1px solid #fc997c;
+        color: #fc997c;
+        background-color: #fff;
+      }
+      #features p {
+        display: inline-block;
+        margin-top: 20px;
+      }
+      .section-title {
+        text-align: center;
+      }
+      .plan {
+        text-align: center;
+        padding: 30px;
+        width: 33.3%;
+        float: left;
+      }
+      .clearfix::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+      .container {
+        margin: 0 auto;
+        width: 1000px;
+      }
+      .inner-plan {
+        background-color: #edf5f7;
+        padding: 25px 10px;
+      }
+      #plans button {
+        border: 2px solid black;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header" style="height: 40px">
+      <a
+        href="padding.html"
+        style="
+          text-decoration: none;
+          font-size: 25px;
+          padding-left: 10px;
+          padding-bottom: 10px;
+          padding-top: 5px;
+        "
+        >MovieApp</a
+      >
+      <nav class="nav-ul">
+        <ul>
+          <li class="main-nav__item">
+            <a href="padding.html" style="text-decoration: none; color: #fff"
+              >Filmler</a
+            >
+          </li>
+          <li class="main-nav__item">
+            <a href="padding.html" style="text-decoration: none; color: #fff"
+              >Diziler</a
+            >
+          </li>
+          <li class="main-nav__item main-nav__item--login">
+            <a href="padding.html" style="text-decoration: none; color: #fff"
+              >Login</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section id="baslik" style="height: 500px">
+      <h1 id="baslik__1">Welcome to MovieApp</h1>
+    </section>
+    <section id="how-it-works" style="text-align: center">
+      <div class="row">
+        <h2>How it works?</h2>
+        <p>
+          We wil show you step by step how to start watching yor fav. tv
+          programs
+        </p>
+      </div>
+      <!-- font awesome diye arat size bilgisi için sitede hazır classlar var kütüphane eklemeyi unutma kütüphanede integrity den itibaren silebilirsin kütüphanenin versiyonuna dikkat et color ı style olarak verebilirsin ayrıca google icon da kullanılabilir -->
+      <div class="row">
+        <div class="col-3 icon-box">
+          <i class="fa-solid fa-right-to-bracket fa-3x"></i>
+          <h3>Register</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Perspiciatis delectus consectetur quod voluptatem eveniet magnam.
+          </p>
+        </div>
+        <div class="col-3 icon-box">
+          <i class="fa-brands fa-buffer fa-3x"></i>
+          <h3>Choose a plan</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Perspiciatis delectus consectetur quod voluptatem eveniet magnam.
+          </p>
+        </div>
+        <div class="col-3 icon-box">
+          <i class="fa-solid fa-face-smile fa-3x"></i>
+          <h3>Enjoy Moviefy</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Perspiciatis delectus consectetur quod voluptatem eveniet magnam.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="features">
+      <div class="row">
+        <div class="col-2 features__left"></div>
+        <div class="col-2 features__right">
+          <h3>Watch all Movies & TV Shows once they get released!</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam quae
+            cupiditate soluta quis quia sapiente magni doloribus! Molestias,
+            consectetur sapiente sed, dignissimos deleniti exercitationem dolor
+            ut, provident voluptate maxime tenetur!
+          </p>
+          <a href="#">View Features</a>
+        </div>
+      </div>
+    </section>
+    <section id="plans">
+      <h2 class="section-title">Become a Premium Member</h2>
+      <div class="container clearfix">
+        <div class="plan">
+          <div class="inner-plan">
+            <h2>Free</h2>
+            <h3>0/month</h3>
+            <ul>
+              <li>HD available</li>
+              <li>Unlimited Movies and TV shows</li>
+              <li>Watch on your phone & tablet</li>
+              <li>Download and watch offline</li>
+              <li>Screens you can watch</li>
+              <li>First Month Free</li>
+            </ul>
+            <br />
+            <div><button>Choose Plan</button></div>
+          </div>
+        </div>
+        <div class="plan">
+          <div class="inner-plan">
+            <h2>Basic</h2>
+            <h3>$9.99/month</h3>
+            <ul>
+              <li>HD available</li>
+              <li>Unlimited Movies and TV shows</li>
+              <li>Watch on your phone & tablet</li>
+              <li>Download and watch offline</li>
+              <li>Screens you can watch</li>
+              <li>First Month Free</li>
+            </ul>
+            <br />
+            <div><button>Choose Plan</button></div>
+          </div>
+        </div>
+        <div class="plan">
+          <div class="inner-plan">
+            <h2>Premium</h2>
+            <h3>$19.99/month</h3>
+            <ul>
+              <li>HD available</li>
+              <li>Unlimited Movies and TV shows</li>
+              <li>Watch on your phone & tablet</li>
+              <li>Download and watch offline</li>
+              <li>Screens you can watch</li>
+              <li>First Month Free</li>
+            </ul>
+            <br />
+            <div><button>Choose Plan</button></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br /><br />
+  </body>
+</html>
